@@ -1,0 +1,94 @@
+{
+  "kind": "reported-browser-QA-observation-2",
+  "recorded": "2026-10-29T09:28:07.727Z",
+  "origin": "Exact visible text and references reported by parent from a second live Ollama browser run. Not a reconstructed raw provider response.",
+  "observed": {
+    "summary": "项目已完成网络升级模拟工作，包括6个站点的网络、视频与服务移交，以及试点部署和UAT测试。",
+    "decisionText": "项目已确认网络升级模拟工作完成，包括6个站点的网络、视频与服务移交，以及试点部署和UAT测试。",
+    "reportedSourceIds": [
+      "harbourlink",
+      "HL-01",
+      "HL-02",
+      "HL-05",
+      "HL-06",
+      "HL-08"
+    ],
+    "actionText": "验证网络与视频平台接口的模拟验收记录（非真实客户成果）",
+    "actionSourceIds": [
+      "HL-02",
+      "HL-04"
+    ]
+  },
+  "reportedContext": "Seed tasks plus one completed browser-QA task; project spent changed to 500000; notes empty. Extra QA task details were not provided and are not invented here.",
+  "relevantSourceStates": [
+    {
+      "id": "HL-01",
+      "title": "确认业务需求与交付范围",
+      "status": "done",
+      "accepted": true,
+      "evidence": "SIM-HL-01：模拟验收记录（非真实客户成果）"
+    },
+    {
+      "id": "HL-02",
+      "title": "完成 6 站点勘察与接入清单",
+      "status": "done",
+      "accepted": true,
+      "evidence": "SIM-HL-02：模拟验收记录（非真实客户成果）"
+    },
+    {
+      "id": "HL-03",
+      "title": "确认交换机到货与设备预配置",
+      "status": "blocked",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "HL-04",
+      "title": "复核网络与视频平台接口",
+      "status": "active",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "HL-05",
+      "title": "执行试点站点部署",
+      "status": "todo",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "HL-06",
+      "title": "组织端到端 UAT 与缺陷关闭",
+      "status": "review",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "HL-07",
+      "title": "确认服务支持与升级联系人",
+      "status": "todo",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "HL-08",
+      "title": "完成验收及服务移交",
+      "status": "todo",
+      "accepted": false,
+      "evidence": ""
+    }
+  ],
+  "guardResult": {
+    "rejected": true,
+    "code": "FACT_CONFLICT",
+    "sourceIds": [
+      "HL-03",
+      "HL-04",
+      "HL-05",
+      "HL-06",
+      "HL-07",
+      "HL-08"
+    ]
+  },
+  "scope": "A regression fixture, not a new model-quality benchmark. Conservative scope/source-state checks now reject this output."
+}

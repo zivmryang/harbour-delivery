@@ -1,0 +1,507 @@
+{
+  "version": 1,
+  "asOf": "2026-10-29",
+  "projects": [
+    {
+      "id": "harbourlink",
+      "name": "HarbourLink 网络升级",
+      "client": "HarbourLink Studio · 模拟客户",
+      "description": "6 个模拟站点的网络、视频与服务移交。以关键依赖、供应商协作和验收准备为核心。",
+      "budget": 480000,
+      "spent": 312000,
+      "target": "2026-11-13",
+      "category": "ICT Infrastructure"
+    },
+    {
+      "id": "civicflow",
+      "name": "CivicFlow 服务流程",
+      "client": "CivicFlow Collective · 模拟机构",
+      "description": "内部服务请求与周报流程试点，验证 AI 辅助整理与人工复核的实际边界。",
+      "budget": 60000,
+      "spent": 28000,
+      "target": "2026-11-20",
+      "category": "AI Workflow"
+    },
+    {
+      "id": "cloudbridge",
+      "name": "CloudBridge 迁移准备",
+      "client": "CloudBridge Workshop · 模拟客户",
+      "description": "系统迁移、回退演练和运维交接，关注测试证据及上线决策。",
+      "budget": 180000,
+      "spent": 186000,
+      "target": "2026-11-10",
+      "category": "Service Transition"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "HL-01",
+      "projectId": "harbourlink",
+      "title": "确认业务需求与交付范围",
+      "owner": "项目负责人 A",
+      "vendor": "内部团队",
+      "status": "done",
+      "priority": "medium",
+      "start": "2026-10-19",
+      "due": "2026-10-20",
+      "dependencies": [],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": true,
+      "evidence": "SIM-HL-01：模拟验收记录（非真实客户成果）"
+    },
+    {
+      "id": "HL-02",
+      "projectId": "harbourlink",
+      "title": "完成 6 站点勘察与接入清单",
+      "owner": "工程协调员 B",
+      "vendor": "模拟网络供应商",
+      "status": "done",
+      "priority": "medium",
+      "start": "2026-10-21",
+      "due": "2026-10-23",
+      "dependencies": [
+        "HL-01"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": true,
+      "evidence": "SIM-HL-02：模拟验收记录（非真实客户成果）"
+    },
+    {
+      "id": "HL-03",
+      "projectId": "harbourlink",
+      "title": "确认交换机到货与设备预配置",
+      "owner": "供应商负责人 C",
+      "vendor": "模拟网络供应商",
+      "status": "blocked",
+      "priority": "high",
+      "start": "2026-10-24",
+      "due": "2026-10-28",
+      "dependencies": [
+        "HL-02"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "HL-04",
+      "projectId": "harbourlink",
+      "title": "复核网络与视频平台接口",
+      "owner": "集成负责人 D",
+      "vendor": "模拟平台供应商",
+      "status": "active",
+      "priority": "high",
+      "start": "2026-10-24",
+      "due": "2026-10-30",
+      "dependencies": [
+        "HL-02"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "HL-05",
+      "projectId": "harbourlink",
+      "title": "执行试点站点部署",
+      "owner": "工程协调员 B",
+      "vendor": "模拟网络供应商",
+      "status": "todo",
+      "priority": "medium",
+      "start": "2026-10-31",
+      "due": "2026-11-03",
+      "dependencies": [
+        "HL-03",
+        "HL-04"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "HL-06",
+      "projectId": "harbourlink",
+      "title": "组织端到端 UAT 与缺陷关闭",
+      "owner": "测试负责人 E",
+      "vendor": "联合测试组",
+      "status": "review",
+      "priority": "high",
+      "start": "2026-11-04",
+      "due": "2026-11-07",
+      "dependencies": [
+        "HL-05"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "HL-07",
+      "projectId": "harbourlink",
+      "title": "确认服务支持与升级联系人",
+      "owner": "",
+      "vendor": "服务台",
+      "status": "todo",
+      "priority": "medium",
+      "start": "2026-11-04",
+      "due": "2026-11-06",
+      "dependencies": [
+        "HL-05"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "HL-08",
+      "projectId": "harbourlink",
+      "title": "完成验收及服务移交",
+      "owner": "项目负责人 A",
+      "vendor": "服务台",
+      "status": "todo",
+      "priority": "high",
+      "start": "2026-11-08",
+      "due": "2026-11-13",
+      "dependencies": [
+        "HL-06",
+        "HL-07"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "CF-01",
+      "projectId": "civicflow",
+      "title": "访谈使用者并记录现状基线",
+      "owner": "流程负责人 F",
+      "vendor": "模拟机构",
+      "status": "done",
+      "priority": "medium",
+      "start": "2026-10-20",
+      "due": "2026-10-23",
+      "dependencies": [],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": true,
+      "evidence": "SIM-CF-01：模拟验收记录（非真实客户成果）"
+    },
+    {
+      "id": "CF-02",
+      "projectId": "civicflow",
+      "title": "定义数据字段、隐私与验收规则",
+      "owner": "流程负责人 F",
+      "vendor": "模拟机构",
+      "status": "done",
+      "priority": "medium",
+      "start": "2026-10-24",
+      "due": "2026-10-26",
+      "dependencies": [
+        "CF-01"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": true,
+      "evidence": "SIM-CF-02：模拟验收记录（非真实客户成果）"
+    },
+    {
+      "id": "CF-03",
+      "projectId": "civicflow",
+      "title": "搭建周报与行动项工作流",
+      "owner": "自动化开发员 G",
+      "vendor": "交付团队",
+      "status": "active",
+      "priority": "high",
+      "start": "2026-10-27",
+      "due": "2026-11-03",
+      "dependencies": [
+        "CF-02"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "CF-04",
+      "projectId": "civicflow",
+      "title": "执行异常输入与来源追溯测试",
+      "owner": "测试负责人 H",
+      "vendor": "交付团队",
+      "status": "todo",
+      "priority": "medium",
+      "start": "2026-11-04",
+      "due": "2026-11-07",
+      "dependencies": [
+        "CF-03"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "CF-05",
+      "projectId": "civicflow",
+      "title": "试用、测量与用户培训",
+      "owner": "流程负责人 F",
+      "vendor": "模拟机构",
+      "status": "todo",
+      "priority": "medium",
+      "start": "2026-11-08",
+      "due": "2026-11-16",
+      "dependencies": [
+        "CF-04"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "CF-06",
+      "projectId": "civicflow",
+      "title": "确认业务效果并移交维护",
+      "owner": "项目负责人 I",
+      "vendor": "模拟机构",
+      "status": "todo",
+      "priority": "medium",
+      "start": "2026-11-17",
+      "due": "2026-11-20",
+      "dependencies": [
+        "CF-05"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "CB-01",
+      "projectId": "cloudbridge",
+      "title": "确认应用清单与迁移边界",
+      "owner": "迁移负责人 J",
+      "vendor": "模拟云服务商",
+      "status": "done",
+      "priority": "medium",
+      "start": "2026-10-19",
+      "due": "2026-10-22",
+      "dependencies": [],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": true,
+      "evidence": "SIM-CB-01：模拟验收记录（非真实客户成果）"
+    },
+    {
+      "id": "CB-02",
+      "projectId": "cloudbridge",
+      "title": "完成备份与恢复验证",
+      "owner": "技术负责人 K",
+      "vendor": "模拟云服务商",
+      "status": "active",
+      "priority": "high",
+      "start": "2026-10-23",
+      "due": "2026-10-28",
+      "dependencies": [
+        "CB-01"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "CB-03",
+      "projectId": "cloudbridge",
+      "title": "协调切换窗口与通知计划",
+      "owner": "迁移负责人 J",
+      "vendor": "模拟业务团队",
+      "status": "active",
+      "priority": "medium",
+      "start": "2026-10-23",
+      "due": "2026-10-30",
+      "dependencies": [
+        "CB-01"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "CB-04",
+      "projectId": "cloudbridge",
+      "title": "执行迁移与回退演练",
+      "owner": "技术负责人 K",
+      "vendor": "模拟云服务商",
+      "status": "todo",
+      "priority": "high",
+      "start": "2026-10-31",
+      "due": "2026-11-04",
+      "dependencies": [
+        "CB-02",
+        "CB-03"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "CB-05",
+      "projectId": "cloudbridge",
+      "title": "完成用户确认与监控交接",
+      "owner": "服务负责人 L",
+      "vendor": "服务台",
+      "status": "todo",
+      "priority": "medium",
+      "start": "2026-11-05",
+      "due": "2026-11-07",
+      "dependencies": [
+        "CB-04"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    },
+    {
+      "id": "CB-06",
+      "projectId": "cloudbridge",
+      "title": "批准正式切换与移交",
+      "owner": "迁移负责人 J",
+      "vendor": "模拟业务团队",
+      "status": "todo",
+      "priority": "high",
+      "start": "2026-11-08",
+      "due": "2026-11-10",
+      "dependencies": [
+        "CB-05"
+      ],
+      "acceptance": "负责人确认检查清单完成，未关闭的重要问题有明确处理决定。",
+      "accepted": false,
+      "evidence": ""
+    }
+  ],
+  "risks": [
+    {
+      "id": "RAID-HL-01",
+      "projectId": "harbourlink",
+      "title": "设备到货延迟影响试点部署",
+      "type": "issue",
+      "owner": "供应商负责人 C",
+      "impact": 3,
+      "likelihood": 3,
+      "status": "open",
+      "mitigation": "今天确认可交付批次，评估分站点实施方案；由项目负责人批准计划变更。",
+      "taskId": "HL-03"
+    },
+    {
+      "id": "RAID-HL-02",
+      "projectId": "harbourlink",
+      "title": "视频平台接口版本待联合验证",
+      "type": "risk",
+      "owner": "集成负责人 D",
+      "impact": 3,
+      "likelihood": 2,
+      "status": "mitigated",
+      "mitigation": "保留联调环境并安排两家供应商共同验证。",
+      "taskId": "HL-04"
+    },
+    {
+      "id": "RAID-CF-01",
+      "projectId": "civicflow",
+      "title": "旧纪要可能缺少行动项负责人",
+      "type": "assumption",
+      "owner": "流程负责人 F",
+      "impact": 2,
+      "likelihood": 3,
+      "status": "open",
+      "mitigation": "缺失值输出为待确认，禁止模型自行指定负责人。",
+      "taskId": "CF-03"
+    },
+    {
+      "id": "RAID-CB-01",
+      "projectId": "cloudbridge",
+      "title": "恢复演练未完成，不能批准切换",
+      "type": "dependency",
+      "owner": "技术负责人 K",
+      "impact": 3,
+      "likelihood": 2,
+      "status": "open",
+      "mitigation": "取得恢复时间及完整性测试记录后再进行上线评审。",
+      "taskId": "CB-02"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "MET-HL-01",
+      "projectId": "harbourlink",
+      "label": "模拟：一份周报的编制与复核",
+      "before": 60,
+      "after": 38,
+      "beforeErrors": 3,
+      "afterErrors": 1,
+      "sampleSize": 10,
+      "reviewer": "模拟评审员",
+      "date": "2026-10-28",
+      "provenance": "simulation"
+    },
+    {
+      "id": "MET-HL-02",
+      "projectId": "harbourlink",
+      "label": "模拟：会议行动项整理",
+      "before": 25,
+      "after": 18,
+      "beforeErrors": 2,
+      "afterErrors": 1,
+      "sampleSize": 10,
+      "reviewer": "模拟评审员",
+      "date": "2026-10-28",
+      "provenance": "simulation"
+    },
+    {
+      "id": "MET-CF-01",
+      "projectId": "civicflow",
+      "label": "模拟：服务请求分类",
+      "before": 18,
+      "after": 11,
+      "beforeErrors": 4,
+      "afterErrors": 2,
+      "sampleSize": 12,
+      "reviewer": "模拟使用者",
+      "date": "2026-10-27",
+      "provenance": "simulation"
+    },
+    {
+      "id": "MET-CF-02",
+      "projectId": "civicflow",
+      "label": "模拟：业务报告复核",
+      "before": 45,
+      "after": 34,
+      "beforeErrors": 2,
+      "afterErrors": 1,
+      "sampleSize": 12,
+      "reviewer": "模拟使用者",
+      "date": "2026-10-27",
+      "provenance": "simulation"
+    },
+    {
+      "id": "MET-CB-01",
+      "projectId": "cloudbridge",
+      "label": "模拟：迁移问题归纳",
+      "before": 40,
+      "after": 29,
+      "beforeErrors": 2,
+      "afterErrors": 1,
+      "sampleSize": 10,
+      "reviewer": "模拟工程师",
+      "date": "2026-10-28",
+      "provenance": "simulation"
+    },
+    {
+      "id": "MET-CB-02",
+      "projectId": "cloudbridge",
+      "label": "模拟：移交清单整理",
+      "before": 30,
+      "after": 22,
+      "beforeErrors": 3,
+      "afterErrors": 1,
+      "sampleSize": 10,
+      "reviewer": "模拟工程师",
+      "date": "2026-10-28",
+      "provenance": "simulation"
+    }
+  ],
+  "briefs": [],
+  "audit": []
+}

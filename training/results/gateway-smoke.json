@@ -1,0 +1,29 @@
+{
+  "mode": "live-gateway-http",
+  "synthetic": true,
+  "request": {
+    "sourceId": "SIM-LIVE-02",
+    "text": "项目验收准备；负责人 DemoLead-C；截止日期 2026-11-08；状态待审核；风险中。",
+    "model": "adapted"
+  },
+  "response": {
+    "extraction": {
+      "source_id": "SIM-LIVE-02",
+      "owner": "DemoLead-C",
+      "due": "2026-11-08",
+      "status": "review",
+      "risk": "medium"
+    },
+    "model": "mlx-community/Qwen3-0.6B-4bit",
+    "variant": "adapted",
+    "durationMs": 473
+  },
+  "expected": {
+    "source_id": "SIM-LIVE-02",
+    "owner": "DemoLead-C",
+    "due": "2026-11-08",
+    "status": "review",
+    "risk": "medium"
+  },
+  "passed": true
+}

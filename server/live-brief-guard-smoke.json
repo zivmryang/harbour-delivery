@@ -1,0 +1,80 @@
+{
+  "kind": "live-brief-completion-guard-smoke",
+  "started": "2026-10-29T09:20:56.857Z",
+  "completed": "2026-10-29T09:21:00.021Z",
+  "outcome": "rejected",
+  "input": {
+    "provider": "ollama",
+    "language": "zh",
+    "project": {
+      "id": "harbourlink",
+      "name": "HarbourLink 网络升级"
+    },
+    "facts": [
+      {
+        "id": "CONTEXT",
+        "text": "Independent practice. All project organizations, people and results are synthetic demonstrations. Status as of 2026-10-29."
+      },
+      {
+        "id": "harbourlink",
+        "text": "{\"id\":\"harbourlink\",\"name\":\"HarbourLink 网络升级\",\"client\":\"HarbourLink Studio · 模拟客户\",\"description\":\"6 个模拟站点的网络、视频与服务移交。以关键依赖、供应商协作和验收准备为核心。\",\"budget\":480000,\"spent\":312000,\"target\":\"2026-11-13\",\"category\":\"ICT Infrastructure\"}"
+      },
+      {
+        "id": "HL-01",
+        "text": "{\"id\":\"HL-01\",\"projectId\":\"harbourlink\",\"title\":\"确认业务需求与交付范围\",\"owner\":\"项目负责人 A\",\"vendor\":\"内部团队\",\"status\":\"done\",\"priority\":\"medium\",\"start\":\"2026-10-19\",\"due\":\"2026-10-20\",\"dependencies\":[],\"acceptance\":\"负责人确认检查清单完成，未关闭的重要问题有明确处理决定。\",\"accepted\":true,\"evidence\":\"SIM-HL-01：模拟验收记录（非真实客户成果）\"}"
+      },
+      {
+        "id": "HL-02",
+        "text": "{\"id\":\"HL-02\",\"projectId\":\"harbourlink\",\"title\":\"完成 6 站点勘察与接入清单\",\"owner\":\"工程协调员 B\",\"vendor\":\"模拟网络供应商\",\"status\":\"done\",\"priority\":\"medium\",\"start\":\"2026-10-21\",\"due\":\"2026-10-23\",\"dependencies\":[\"HL-01\"],\"acceptance\":\"负责人确认检查清单完成，未关闭的重要问题有明确处理决定。\",\"accepted\":true,\"evidence\":\"SIM-HL-02：模拟验收记录（非真实客户成果）\"}"
+      },
+      {
+        "id": "HL-03",
+        "text": "{\"id\":\"HL-03\",\"projectId\":\"harbourlink\",\"title\":\"确认交换机到货与设备预配置\",\"owner\":\"供应商负责人 C\",\"vendor\":\"模拟网络供应商\",\"status\":\"blocked\",\"priority\":\"high\",\"start\":\"2026-10-24\",\"due\":\"2026-10-28\",\"dependencies\":[\"HL-02\"],\"acceptance\":\"负责人确认检查清单完成，未关闭的重要问题有明确处理决定。\",\"accepted\":false,\"evidence\":\"\"}"
+      },
+      {
+        "id": "HL-04",
+        "text": "{\"id\":\"HL-04\",\"projectId\":\"harbourlink\",\"title\":\"复核网络与视频平台接口\",\"owner\":\"集成负责人 D\",\"vendor\":\"模拟平台供应商\",\"status\":\"active\",\"priority\":\"high\",\"start\":\"2026-10-24\",\"due\":\"2026-10-30\",\"dependencies\":[\"HL-02\"],\"acceptance\":\"负责人确认检查清单完成，未关闭的重要问题有明确处理决定。\",\"accepted\":false,\"evidence\":\"\"}"
+      },
+      {
+        "id": "HL-05",
+        "text": "{\"id\":\"HL-05\",\"projectId\":\"harbourlink\",\"title\":\"执行试点站点部署\",\"owner\":\"工程协调员 B\",\"vendor\":\"模拟网络供应商\",\"status\":\"todo\",\"priority\":\"medium\",\"start\":\"2026-10-31\",\"due\":\"2026-11-03\",\"dependencies\":[\"HL-03\",\"HL-04\"],\"acceptance\":\"负责人确认检查清单完成，未关闭的重要问题有明确处理决定。\",\"accepted\":false,\"evidence\":\"\"}"
+      },
+      {
+        "id": "HL-06",
+        "text": "{\"id\":\"HL-06\",\"projectId\":\"harbourlink\",\"title\":\"组织端到端 UAT 与缺陷关闭\",\"owner\":\"测试负责人 E\",\"vendor\":\"联合测试组\",\"status\":\"review\",\"priority\":\"high\",\"start\":\"2026-11-04\",\"due\":\"2026-11-07\",\"dependencies\":[\"HL-05\"],\"acceptance\":\"负责人确认检查清单完成，未关闭的重要问题有明确处理决定。\",\"accepted\":false,\"evidence\":\"\"}"
+      },
+      {
+        "id": "HL-07",
+        "text": "{\"id\":\"HL-07\",\"projectId\":\"harbourlink\",\"title\":\"确认服务支持与升级联系人\",\"owner\":\"\",\"vendor\":\"服务台\",\"status\":\"todo\",\"priority\":\"medium\",\"start\":\"2026-11-04\",\"due\":\"2026-11-06\",\"dependencies\":[\"HL-05\"],\"acceptance\":\"负责人确认检查清单完成，未关闭的重要问题有明确处理决定。\",\"accepted\":false,\"evidence\":\"\"}"
+      },
+      {
+        "id": "HL-08",
+        "text": "{\"id\":\"HL-08\",\"projectId\":\"harbourlink\",\"title\":\"完成验收及服务移交\",\"owner\":\"项目负责人 A\",\"vendor\":\"服务台\",\"status\":\"todo\",\"priority\":\"high\",\"start\":\"2026-11-08\",\"due\":\"2026-11-13\",\"dependencies\":[\"HL-06\",\"HL-07\"],\"acceptance\":\"负责人确认检查清单完成，未关闭的重要问题有明确处理决定。\",\"accepted\":false,\"evidence\":\"\"}"
+      },
+      {
+        "id": "RAID-HL-01",
+        "text": "{\"id\":\"RAID-HL-01\",\"projectId\":\"harbourlink\",\"title\":\"设备到货延迟影响试点部署\",\"type\":\"issue\",\"owner\":\"供应商负责人 C\",\"impact\":3,\"likelihood\":3,\"status\":\"open\",\"mitigation\":\"今天确认可交付批次，评估分站点实施方案；由项目负责人批准计划变更。\",\"taskId\":\"HL-03\"}"
+      },
+      {
+        "id": "RAID-HL-02",
+        "text": "{\"id\":\"RAID-HL-02\",\"projectId\":\"harbourlink\",\"title\":\"视频平台接口版本待联合验证\",\"type\":\"risk\",\"owner\":\"集成负责人 D\",\"impact\":3,\"likelihood\":2,\"status\":\"mitigated\",\"mitigation\":\"保留联调环境并安排两家供应商共同验证。\",\"taskId\":\"HL-04\"}"
+      }
+    ],
+    "notes": ""
+  },
+  "error": {
+    "code": "FACT_CONFLICT",
+    "message": "Model summary claims completion for tasks without valid completion evidence (HL-03, HL-04, HL-05, HL-06, HL-08). The draft was rejected; inspect the task statuses and retry or use the rules report."
+  },
+  "rejectedDraft": {
+    "sourceIds": [
+      "HL-03",
+      "HL-04",
+      "HL-05",
+      "HL-06",
+      "HL-08"
+    ],
+    "summary": "项目已确认业务需求与交付范围，完成6个模拟站点的网络与接入清单，确认交换机到货与设备预配置，复核网络与视频平台接口，执行试点站点部署，组织端到端 UAT 与缺陷关闭，完成验收及服务移交。"
+  },
+  "scope": "Real synthetic-input model generation. Rejected drafts are retained here only for explicit QA; normal gateway responses do not log or expose them."
+}

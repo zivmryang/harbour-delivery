@@ -1,0 +1,28 @@
+Loading configuration file training/config.yaml
+Loading pretrained model
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2616.35it/s]
+Loading datasets
+Training
+╭─ mlx_lm.lora ────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│    model           mlx-community/Qwen3-0.6B-4bit                                                                     │
+│    type            lora · 8 layers · rank 4                                                                          │
+│    dataset         training/data                                                                                     │
+│    optimizer       adam · lr 1.0e-04                                                                                 │
+│    batch · iters   1 · 60                                                                                            │
+│    max seq         512                                                                                               │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Trainable parameters: 0.121% (0.721M/596.050M)
+  iter   train_loss     tok/s     tokens
+     1    val 1.444    0.54s
+    10    0.244 ▼      103      0.5k
+    20    0.038 ▼      189      1.0k
+    30    val 0.106    0.56s
+    30    0.015 ▼      201      1.6k
+    40    0.023 ▲      195      2.1k
+    50    0.004 ▼      195      2.7k
+    60    val 0.152    0.57s
+    60    0.005 ▲      197      3.2k
+  save  0000060_adapters.safetensors
+train ██████████████████████████████ 100% ·    60/60

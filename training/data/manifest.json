@@ -1,0 +1,15 @@
+{
+  "seed": 20261029,
+  "provenance": "100% synthetic; no personal or customer data",
+  "splitPolicy": "Templates, source IDs, owner namespaces and topic families are split-disjoint; common schema and status vocabulary are intentionally shared. Synthetic holdout is not proof of real-world generalisation.",
+  "counts": {
+    "train": 96,
+    "valid": 16,
+    "test": 16
+  },
+  "sha256": {
+    "test.jsonl": "f0bedd500f591ea4993ca5a1ee1e811d19313eaf938b99b4d9ac57b7f0d2d29d",
+    "train.jsonl": "914702129bf976dc84f863a42ff002f9ed15a45cac86d22961f61c18cdea30fc",
+    "valid.jsonl": "1e2bb0b2d341e1c40d4a9cfaab0de0ecf5cc9302c27d5533bc1481934c7ec384"
+  }
+}

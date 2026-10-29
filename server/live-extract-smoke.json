@@ -1,0 +1,33 @@
+{
+  "kind": "live-mlx-gateway-smoke",
+  "started": "2026-10-29T09:07:17.668978+00:00",
+  "completed": "2026-10-29T09:07:18.114378+00:00",
+  "httpStatus": 200,
+  "elapsedMs": 445,
+  "passed": true,
+  "input": {
+    "text": "项目验收准备；负责人 DemoLead-C；截止日期 2026-11-08；状态待审核；风险中。",
+    "sourceId": "SIM-LIVE-02",
+    "model": "adapted"
+  },
+  "expected": {
+    "source_id": "SIM-LIVE-02",
+    "owner": "DemoLead-C",
+    "due": "2026-11-08",
+    "status": "review",
+    "risk": "medium"
+  },
+  "result": {
+    "extraction": {
+      "source_id": "SIM-LIVE-02",
+      "owner": "DemoLead-C",
+      "due": "2026-11-08",
+      "status": "review",
+      "risk": "medium"
+    },
+    "model": "mlx-community/Qwen3-0.6B-4bit",
+    "variant": "adapted",
+    "durationMs": 439
+  },
+  "scope": "One real local HTTP gateway -> MLX LoRA extraction call; exact five-field match on synthetic text. Not an independent benchmark or business outcome."
+}

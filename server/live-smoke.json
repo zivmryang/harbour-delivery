@@ -1,0 +1,43 @@
+{
+  "kind": "live-model-smoke",
+  "started": "2026-10-29T08:54:46.216Z",
+  "completed": "2026-10-29T08:54:48.881Z",
+  "passed": true,
+  "input": {
+    "provider": "ollama",
+    "language": "en",
+    "project": {
+      "id": "DEMO-1",
+      "name": "Synthetic network rollout"
+    },
+    "facts": [
+      {
+        "id": "TASK-1",
+        "text": "SIMULATION: acceptance testing is blocked because the vendor has not supplied the configuration evidence. No acceptance sign-off has been issued."
+      },
+      {
+        "id": "TASK-2",
+        "text": "SIMULATION: the service handover depends on TASK-1. The handover must not be marked completed."
+      }
+    ],
+    "notes": "Identify the evidence needed before acceptance. This is a synthetic test, not a real customer project."
+  },
+  "result": {
+    "text": "AI draft · Human review required\n\nThe project is in the simulation phase, with acceptance testing blocked due to incomplete configuration evidence and a handover dependency not fully validated.\n\nProposed decisions (not approved)\n• Validate configuration evidence from the vendor to ensure acceptance sign-off is issued. [TASK-1]\n\nNext actions\n• Validate configuration evidence from the vendor to ensure acceptance sign-off is issued. [TASK-1]\n\nSource ids were checked; factual accuracy still requires human review.",
+    "sourceIds": [
+      "TASK-1"
+    ],
+    "provider": "ollama",
+    "model": "qwen3:0.6b",
+    "durationMs": 2665
+  },
+  "scope": "Checks live generation and source-id validity only; human review of content remains required.",
+  "humanReview": {
+    "status": "needs_revision",
+    "observations": [
+      "Real model completed and all cited source ids existed.",
+      "The phrase simulation phase is imprecise: simulation describes the dataset, not an actual delivery phase.",
+      "The action list omitted the explicit handover dependency. Small-model drafts require review; schema validity is not factual completeness."
+    ]
+  }
+}

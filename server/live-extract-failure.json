@@ -1,0 +1,22 @@
+{
+  "kind": "live-mlx-free-form-failure",
+  "at": "2026-10-29T09:08:06.625335+00:00",
+  "input": {
+    "sourceId": "NOTE-01",
+    "text": "Source: NOTE-01. Mei is responsible for the network acceptance test, due 2026-11-06. The work is blocked because equipment has not arrived. Risk is high."
+  },
+  "expected": {
+    "source_id": "NOTE-01",
+    "owner": "Mei",
+    "due": "2026-11-06",
+    "status": "blocked",
+    "risk": "high"
+  },
+  "rawModelContent": "{\"source_id\": \"NOTE-01\", \"owner\": \"MEI\", \"due\": \"2026-11-06\", \"status\": \"blocked\", \"risk\": \"high\"}",
+  "gatewayOutcome": {
+    "httpStatus": 502,
+    "error": "INVALID_MODEL_OUTPUT",
+    "message": "The extracted owner or date is not present in the source record. No project data was changed."
+  },
+  "scope": "Single free-form English example outside the fixed template evaluation. Retained to demonstrate model limitations and gateway rejection of ungrounded values."
+}

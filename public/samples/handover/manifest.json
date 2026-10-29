@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "description": "全部为虚构测试资料，包含五项明确交付、日期与预算冲突、缺失的实际责任人及未经批准的工期建议。",
+  "context": {
+    "jurisdiction": "香港",
+    "industry": "ICT / 信息技术服务",
+    "projectType": "六个虚构协作空间的网络与会议系统升级",
+    "kickoffDate": "2026-11-02"
+  },
+  "knowledgeIds": [
+    "hk-pdpo",
+    "pcpd-outsourcing",
+    "dpo-project-management"
+  ],
+  "documents": [
+    {
+      "id": "SYN-TENDER",
+      "name": "虚构项目招标文件",
+      "kind": "tender",
+      "file": "synthetic-tender.txt"
+    },
+    {
+      "id": "SYN-CONTRACT",
+      "name": "虚构项目采购合同",
+      "kind": "contract",
+      "file": "synthetic-contract.txt"
+    },
+    {
+      "id": "SYN-SOW",
+      "name": "虚构项目实施任务书草案",
+      "kind": "statement_of_work",
+      "file": "synthetic-statement-of-work.txt"
+    }
+  ]
+}

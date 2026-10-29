@@ -1,0 +1,21 @@
+model: mlx-community/Qwen3-0.6B-4bit
+train: true
+data: training/data
+seed: 20261029
+fine_tune_type: lora
+num_layers: 8
+batch_size: 1
+iters: 60
+val_batches: 4
+learning_rate: 0.0001
+steps_per_report: 10
+steps_per_eval: 30
+save_every: 60
+max_seq_length: 512
+adapter_path: training/adapters
+mask_prompt: true
+grad_checkpoint: true
+lora_parameters:
+  rank: 4
+  dropout: 0.0
+  scale: 8.0

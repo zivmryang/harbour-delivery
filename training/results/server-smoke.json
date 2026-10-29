@@ -1,0 +1,24 @@
+{
+  "mode": "live-local-http",
+  "model": "mlx-community/Qwen3-0.6B-4bit + Harbour QLoRA adapter",
+  "endpoint": "127.0.0.1:8080",
+  "synthetic": true,
+  "input": "交付记录 SIM-LIVE-01：负责人 DeploymentLead-A；截止日期 2026-11-03；状态受阻；风险高。设备未到货，等待供应商确认。",
+  "expected": {
+    "source_id": "SIM-LIVE-01",
+    "owner": "DeploymentLead-A",
+    "due": "2026-11-03",
+    "status": "blocked",
+    "risk": "high"
+  },
+  "raw": "{\"source_id\": \"SIM-LIVE-01\", \"owner\": \"DeploymentLead-A\", \"due\": \"2026-11-03\", \"status\": \"blocked\", \"risk\": \"high\"}",
+  "parsed": {
+    "source_id": "SIM-LIVE-01",
+    "owner": "DeploymentLead-A",
+    "due": "2026-11-03",
+    "status": "blocked",
+    "risk": "high"
+  },
+  "passed": true,
+  "seconds": 0.714
+}

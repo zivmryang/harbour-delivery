@@ -1,0 +1,35 @@
+{
+  "kind": "live-mlx-normalized-gateway-smoke",
+  "started": "2026-10-29T09:10:14.189Z",
+  "completed": "2026-10-29T09:10:14.633Z",
+  "httpStatus": 200,
+  "passed": true,
+  "input": {
+    "sourceId": "NOTE-01",
+    "text": "Source: NOTE-01. Mei is responsible for the network acceptance test, due 2026-11-06. The work is blocked because equipment has not arrived. Risk is high.",
+    "model": "adapted"
+  },
+  "expected": {
+    "source_id": "NOTE-01",
+    "owner": "Mei",
+    "due": "2026-11-06",
+    "status": "blocked",
+    "risk": "high"
+  },
+  "result": {
+    "extraction": {
+      "source_id": "NOTE-01",
+      "owner": "Mei",
+      "due": "2026-11-06",
+      "status": "blocked",
+      "risk": "high"
+    },
+    "normalizations": [
+      "Owner casing restored to the unique spelling present in the source."
+    ],
+    "model": "mlx-community/Qwen3-0.6B-4bit",
+    "variant": "adapted",
+    "durationMs": 434
+  },
+  "scope": "Fresh current-code HTTP gateway -> real adapter-enabled MLX. Owner casing normalization is an explicit gateway postprocessing step, not an improvement to raw-model accuracy."
+}
